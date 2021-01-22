@@ -1,0 +1,5 @@
+<script src="{{ 'quickview.js' | asset_url }}" async="async"></script>
+ <script>
+      {% capture content %}{% include 'quickview' %}{% endcapture %}
+      var content = {{ content | json }};
+    </script>
